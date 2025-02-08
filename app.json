@@ -1,34 +1,44 @@
 {
   "expo": {
+    "icon": "./assets/cotivi/play_store_512.png",
+    "userInterfaceStyle": "dark",
+    "version": "1.0.3",
     "plugins": [
       [
         "@react-native-tvos/config-tv",
         {
-          "androidTVBanner": "./assets/images/icon-400x240.png",
-          "appleTVImages": {
-            "icon": "./assets/images/icon-1280x768.png",
-            "iconSmall": "./assets/images/icon-400x240.png",
-            "iconSmall2x": "./assets/images/icon-800x480.png",
-            "topShelf": "./assets/images/icon-1920x720.png",
-            "topShelf2x": "./assets/images/icon-3840x1440.png",
-            "topShelfWide": "./assets/images/icon-2320x720.png",
-            "topShelfWide2x": "./assets/images/icon-4640x1440.png"
+          "androidTVBanner": "./assets/androidtv.png"
+        }
+      ],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "usesCleartextTraffic": true
           }
         }
       ]
     ],
     "android": {
       "splash": {
-        "image": "./assets/images/icon-1920x720.png"
-      }
+        "image": "./assets/cotivi/1024.png",
+        "backgroundColor": "#fff2f5"
+      },
+      "package": "com.cofvuong.tivi",
+      "runtimeVersion": "1.0.3"
     },
     "ios": {
       "splash": {
-        "image": "./assets/images/icon-1920x720.png"
-      }
+        "image": "./assets/cotivi/1024.png",
+        "backgroundColor": "#fff2f5"
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
+      },
+      "bundleIdentifier": "com.cofvuong.tivi"
     },
     "newArchEnabled": true,
-    "name": "MyTV2",
-    "slug": "MyTV2"
+    "name": "Cò TiVi",
+    "slug": "MyTV"
   }
 }
